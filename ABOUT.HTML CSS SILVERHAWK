@@ -1,0 +1,526 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   TOP HEADER SECTION
+========================================= */
+
+.top-header-section {
+    background: #173a69;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.top-header-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.top-header-section .main-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header-section .right-column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+}
+
+.top-header-section .fa-envelope {
+    margin-left: 20px;
+}
+
+.top-header-section .fa-twitter {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.top-header-section .left-column i {
+    margin-right: 5px;
+}
+
+
+/* =========================================
+   MAIN HEADER / NAVIGATION
+========================================= */
+
+.header-section {
+    background: #fff;
+}
+
+.header-section a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    background: transparent;
+}
+
+.header-section .main-column {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+.header-section .right-column {
+    text-align: right;
+}
+
+.header-section ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-section li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 45px;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.header-section li:last-child {
+    margin-right: 0;
+}
+
+
+/* Navigation Link */
+
+.header-section .right-column li a {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 35px 20px 38px;
+}
+
+
+/* Grey Hover Background */
+
+.header-section .right-column li a::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #f2f2f2;
+
+    border-bottom: 3px solid #000;
+
+    transform: translateX(-50%) scaleX(0);
+
+    transition: transform 0.3s ease;
+
+    z-index: -1;
+}
+
+
+/* Hover */
+
+.header-section .right-column li a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.inner-banner {
+    background: url(image/neww.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 140px;
+    text-align: center;
+    color: #fff;
+}
+
+.inner-banner h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.inner-banner p {
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+/* =========================================
+   ABOUT US SECTION
+========================================= */
+
+
+.about-section {
+    background: #f7f7f7;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+
+/* Two Column Layout */
+
+.about-main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================================
+   ABOUT IMAGE
+========================================= */
+
+.about-left-column {
+    position: relative;
+    padding: 25px;
+}
+
+.about-image-box {
+    position: relative;
+    width: 100%;
+}
+
+
+/*
+   IMPORTANT:
+   No .about-dotted-box here.
+
+   The dotted design is already inside
+   math.png, so we don't create another one.
+*/
+
+.about-image-box img {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   ABOUT CONTENT
+========================================= */
+
+.about-right-column {
+    padding-left: 0;
+}
+
+.about-right-column h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BLUE DIAMOND + LINE
+========================================= */
+
+.about-title-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about-title-line .diamond {
+    width: 18px;
+    height: 18px;
+
+    background: #173a69;
+
+    transform: rotate(45deg);
+
+    margin-right: 12px;
+}
+
+.about-title-line .line {
+    width: 120px;
+    height: 2px;
+
+    background: #173a69;
+}
+
+
+/* =========================================
+   ABOUT PARAGRAPHS
+========================================= */
+
+.about-right-column p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   GENERAL H2
+========================================= */
+
+h2 {
+    text-align: center;
+    padding-top: 75px;
+}
+
+
+/* =========================================
+   GENERAL IMAGES
+========================================= */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.support-section {
+    background-image: linear-gradient(#0008, #0008), url("image/tooooolllll.png");
+    background-size: cover;
+    background-position: center;
+    padding: 135px 0;
+}
+
+.support-section .container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.main-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.flex-column {
+    background: #fff;
+    height: 266px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 25px 18px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-column > img:first-child {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.flex-column h3 {
+    color: #173a69;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+}
+
+.flex-column > img:nth-of-type(2) {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 12px;
+}
+
+.support-section .flex-column p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #444;
+    text-align: center;
+    margin: 15px 18px 0;
+    font-weight: 500;
+}
+
+.flex-column p span {
+    color: #173a69;
+}
+
+.paragraph-section {
+    text-align:center;
+    padding:25px 0;
+    background: #fff;
+}
+
+.paragraph-section .main-column {
+    display: block;
+}
+
+.paragraph-section p {
+    margin: 0;
+    font-size: 25px;
+    color: #000;
+}
+
+.paragraph-section p span {
+    color: #173a69;
+    font-weight: 800;
+}
+
+.LAST-SECTION {
+    background:url(image/constructionwork.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top:60px;
+    padding-bottom: 70px;
+    text-align:center;
+}
+
+.LAST-SECTION .main-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.LAST-SECTION .flex-column {
+    width: 33.33%;
+    text-align: center;
+    padding: 55px 25px;
+}
+
+.LAST-SECTION .flex-column img {
+    width: 65px;
+    margin-bottom: 15px;
+}
+
+.LAST-SECTION .flex-column h3 {
+    color: #1d4778;
+    font-size: 18px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.LAST-SECTION .flex-column p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    margin: 0 auto;
+}
+
+.LAST-SECTION .flex-column img {
+    background: transparent;
+}
+
+.LAST-SECTION .container,
+.LAST-SECTION .main-column,
+.LAST-SECTION .flex-column {
+    background: transparent ;
+    background-color: transparent ;
+}
+
+
+
+
+.get-started{
+    background: #173a69;
+    padding-bottom: 60px;
+    padding-top:60px;
+    text-align:center;
+    color:#ffffff;
+    font-size:20px;
+}
+
+a{
+    text-decoration:none;
+    font-size:30px;
+    color:#ffffff;
+}
+
+.footer-section {
+    text-align: center;
+    padding: 20px 0 30px;
+    background: #fff;
+    padding-top:90px;
+    padding-bottom:90px;
+}
+
+.footer-section > .container > img {
+    width: 190px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-icon a {
+    color: #173a69;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-icon a:hover {
+    color: #000;
+}
+
+
+.footer-section i{
+    color:#7f7f7f;
+    font-size: 30px;
+    height:50px;
+    width:50px;
+    border:2px solid;
+    line-height: 50px;
+    border-radius:50%;
+}
+
+ .footer-section a{
+    text-decoration:none;
+}
+
+.footer-section .fa-twitter{
+     margin-left: 10px;
+     margin-right: 10px;
+}
+
+.footer-section .footer-icon{
+    padding-top:10px;
+}
+
+.footer-bottom {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 12px;
+}
+
+.silver-hawk {
+    text-decoration: underline;
+}
+
+
+
